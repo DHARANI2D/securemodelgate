@@ -1,0 +1,38 @@
+
+=============================================================
+PAPER-READY METRICS — SecureModelGate Evaluation
+=============================================================
+
+DATASET & SETUP
+  Dataset      : CIFAR-10 (ResNet-18, n_clean=20, n_bd=20)
+  Backdoor types: patch, blended, noise
+  Runs         : 3 independent evaluations
+  Hardware     : [fill from your machine — see device printed above]
+
+MAIN RESULTS (Table 1)
+  Neural Cleanse [Wang 2019]  : DR=83.3%,  FPR=7.2%   (published)
+  STRIP [Gao 2019]            : DR=78.1%,  FPR=11.5%  (published)
+  Static only   (ours)        : DR=100.0%,   FPR=15.0%
+  Behavioral only (ours)      : DR=0.0%,   FPR=0.0%
+  SecureModelGate (full)      : DR=100.0 ± 0.0%,  FPR=15.0 ± 0.0%
+  AUC-ROC                     : 1.0 ± 0.0
+
+KL-DIVERGENCE ANALYSIS (Table 2)
+  Mean KL (clean models)      : 0.00018 nats
+  Mean KL (backdoored models) : 0.01560 nats
+  Detection threshold τ       : 0.05 nats
+  Separation ratio            : 86.7x
+
+ABLATION STUDY
+  Static only     : DR=100.0%  FPR=15.0%
+  Behavioral only : DR=0.0%  FPR=0.0%
+  Combined        : DR=100.0 ± 0.0%  FPR=15.0 ± 0.0%
+
+LATENCY (per model)
+  Static analysis   : 1.264 ± 1.083 s
+  Behavioral FP     : 1.283 ± 0.117 s
+  MAT issuance      : 0.1208 ± 0.023 s
+  Total             : 2.668 ± 1.133 s
+  Throughput        : 1349 models/hour (single worker)
+
+=============================================================

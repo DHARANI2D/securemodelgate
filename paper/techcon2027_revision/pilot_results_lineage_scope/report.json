@@ -1,0 +1,66 @@
+{
+  "max_exempt": 1,
+  "alpha": 0.05,
+  "splice": [
+    {
+      "k_foreign": 1,
+      "n": 5,
+      "admitted_median_only": 5,
+      "admitted_full_rule": 0,
+      "admitted_declared": 5
+    },
+    {
+      "k_foreign": 2,
+      "n": 5,
+      "admitted_median_only": 5,
+      "admitted_full_rule": 0,
+      "admitted_declared": 0
+    },
+    {
+      "k_foreign": 3,
+      "n": 5,
+      "admitted_median_only": 5,
+      "admitted_full_rule": 0,
+      "admitted_declared": 0
+    },
+    {
+      "k_foreign": 4,
+      "n": 5,
+      "admitted_median_only": 4,
+      "admitted_full_rule": 0,
+      "admitted_declared": 0
+    }
+  ],
+  "ablation": [
+    {
+      "spectral_weight": 0.0,
+      "auroc_median": 1.0,
+      "auroc_min_layer": 1.0,
+      "worst_genuine_min_layer": 0.8476970044209284,
+      "best_independent_min_layer": 0.1484939148539749,
+      "genuine_admitted": "13/13",
+      "independent_admitted": "0/20",
+      "splice_admitted": "0/5"
+    },
+    {
+      "spectral_weight": 0.5,
+      "auroc_median": 1.0,
+      "auroc_min_layer": 1.0,
+      "worst_genuine_min_layer": 0.9171805155890354,
+      "best_independent_min_layer": 0.5734229501028749,
+      "genuine_admitted": "13/13",
+      "independent_admitted": "0/20",
+      "splice_admitted": "0/5"
+    },
+    {
+      "spectral_weight": 1.0,
+      "auroc_median": 0.9538461538461539,
+      "auroc_min_layer": 0.9961538461538462,
+      "worst_genuine_min_layer": 0.9860008557334516,
+      "best_independent_min_layer": 0.9861598118614618,
+      "genuine_admitted": "9/13",
+      "independent_admitted": "0/20",
+      "splice_admitted": "0/5"
+    }
+  ]
+}

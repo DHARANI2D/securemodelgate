@@ -1,0 +1,27 @@
+=========================================
+SecureModelGate - Paper Metrics
+=========================================
+
+1. KL-Divergence Separation:
+   - Clean Models: 0.0545 ± 0.0721
+   - Backdoor (Patch): 0.2195 ± 0.3791
+   - Backdoor (Blended): 0.1750 ± 0.3843
+   - Backdoor (Noise): 0.0607 ± 0.0250
+   
+2. KS-Test Statistic:
+   - Clean Models: 0.4449 ± 0.0881
+   - Backdoored Models: 0.4829 ± 0.1145
+
+3. Component Latencies (per model):
+   - Training (Clean): 5.64s
+   - Training (Backdoored): 4.60s
+   - Fingerprinting: 507.17ms
+   - KS-Test Analysis: 2.92ms
+   - JWT MAT Issuance: 0.77ms
+
+4. Total Processed: 
+   - 20 Clean, 20 Backdoored
+   - JWT MATs Generated: 40
+
+Evaluation Passes: 3 independent runs completed to build standard deviations.
+=========================================

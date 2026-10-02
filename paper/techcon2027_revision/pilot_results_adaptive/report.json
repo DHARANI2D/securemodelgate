@@ -1,0 +1,70 @@
+{
+  "envelope_threshold": 0.1087261901936761,
+  "results": [
+    {
+      "lam": 0.0,
+      "n": 10,
+      "detection_rate": {
+        "successes": 10,
+        "n": 10,
+        "point_estimate": 1.0,
+        "ci_low": 0.6915028921812392,
+        "ci_high": 1.0
+      },
+      "mean_attack_success_rate": 0.9980000019073486,
+      "mean_envelope_score": 0.2914261233865225
+    },
+    {
+      "lam": 0.5,
+      "n": 10,
+      "detection_rate": {
+        "successes": 8,
+        "n": 10,
+        "point_estimate": 0.8,
+        "ci_low": 0.4439045376923585,
+        "ci_high": 0.9747892736731666
+      },
+      "mean_attack_success_rate": 1.0,
+      "mean_envelope_score": 0.16270542406660166
+    },
+    {
+      "lam": 1.0,
+      "n": 10,
+      "detection_rate": {
+        "successes": 2,
+        "n": 10,
+        "point_estimate": 0.2,
+        "ci_low": 0.02521072632683336,
+        "ci_high": 0.5560954623076415
+      },
+      "mean_attack_success_rate": 1.0,
+      "mean_envelope_score": 0.10815236738313092
+    },
+    {
+      "lam": 2.0,
+      "n": 10,
+      "detection_rate": {
+        "successes": 3,
+        "n": 10,
+        "point_estimate": 0.3,
+        "ci_low": 0.06673951117773447,
+        "ci_high": 0.6524528500599973
+      },
+      "mean_attack_success_rate": 1.0,
+      "mean_envelope_score": 0.11036181907549278
+    },
+    {
+      "lam": 5.0,
+      "n": 10,
+      "detection_rate": {
+        "successes": 6,
+        "n": 10,
+        "point_estimate": 0.6,
+        "ci_low": 0.26237807660694507,
+        "ci_high": 0.8784477418801728
+      },
+      "mean_attack_success_rate": 0.9995000004768372,
+      "mean_envelope_score": 0.13887479869436312
+    }
+  ]
+}

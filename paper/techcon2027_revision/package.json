@@ -1,0 +1,8 @@
+{
+  "name": "securemodelgate-techcon2027-docx-build",
+  "private": true,
+  "description": "Regenerates SecureModelGate_TechCon2027.docx from this revision's content (see build_docx.js).",
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
